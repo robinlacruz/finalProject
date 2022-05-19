@@ -33,7 +33,7 @@
             <assignToReference>ProjectLineItem1.Estimated_Hours__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>CreateProjectLineItems.Quantity</elementReference>
+                <elementReference>CreateProjectLineItems.Quantity__c</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -48,6 +48,13 @@
             <operator>Assign</operator>
             <value>
                 <elementReference>CreateNewProject</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>ProjectLineItem1.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>CreateProjectLineItems.Name</elementReference>
             </value>
         </assignmentItems>
         <connector>
@@ -139,7 +146,7 @@
         <inputAssignments>
             <field>Stage__c</field>
             <value>
-                <stringValue>&apos;Pre-Kickoff&apos;</stringValue>
+                <stringValue>Pre-Kickoff</stringValue>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -170,14 +177,14 @@
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
-            <field>OpportunityId</field>
+            <field>Opportunity__c</field>
             <operator>EqualTo</operator>
             <value>
                 <elementReference>$Record.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>OpportunityLineItem</object>
+        <object>OpportunityLineItem__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <start>
