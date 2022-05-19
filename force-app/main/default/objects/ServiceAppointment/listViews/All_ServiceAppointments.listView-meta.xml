@@ -6,6 +6,7 @@
     <columns>SchedEndTime</columns>
     <columns>ServiceTerritory</columns>
     <columns>Status</columns>
+    <columns>WorkTypeName</columns>
     <columns>WorkType</columns>
     <columns>AdditionalInformation</columns>
     <columns>Account</columns>
