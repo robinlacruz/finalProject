@@ -6,6 +6,7 @@
     <columns>SchedEndTime</columns>
     <columns>ServiceTerritory</columns>
     <columns>Status</columns>
+    <columns>WorkTypeName</columns>
     <columns>WorkType</columns>
     <columns>AdditionalInformation</columns>
     <columns>Account</columns>
@@ -21,5 +22,5 @@
         <operation>notEqual</operation>
         <value>6,4,5</value>
     </filters>
-    <label>MyScheduledAppointments</label>
+    <label>My Scheduled Service Appointments</label>
 </ListView>
